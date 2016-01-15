@@ -1,0 +1,25 @@
+NET "FPGACLK" LOC = "T9" ;
+NET "RESET" LOC = "K13"; // non standard on SW7 since all buttons are used
+
+NET "player1_LeftButton" LOC = "L14";
+NET "player1_RightButton" LOC = "L13";
+NET "player2_LeftButton" LOC = "M14";
+NET "player2_RightButton" LOC = "M13";
+
+NET "VGA_HSYNC" LOC = "R9";
+NET "VGA_VSYNC" LOC = "T10";
+NET "VGA_RED" LOC = "R12";
+NET "VGA_GREEN" LOC = "T12";
+NET "VGA_BLUE" LOC = "R11";
+
+NET "STATUS_LED[7]" LOC = "P11";
+NET "STATUS_LED[6]" LOC = "P12";
+NET "STATUS_LED[5]" LOC = "N12";
+NET "STATUS_LED[4]" LOC = "P13";
+NET "STATUS_LED[3]" LOC = "N14";
+NET "STATUS_LED[2]" LOC = "L12";
+NET "STATUS_LED[1]" LOC = "P14";
+NET "STATUS_LED[0]" LOC = "K12";
+
+NET "FPGACLK" TNM_NET = "clk_net";
+TIMESPEC "TS_CLK" = PERIOD "clk_net" 20 ns;
